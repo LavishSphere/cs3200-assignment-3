@@ -3,8 +3,8 @@ Query 1: Create a new Table Music Video, that is a class of type Track (generali
 */
 
 CREATE TABLE "MusicVideo" (
-	"track_id"	INTEGER NOT NULL,
-	"video_director"	INTEGER NOT NULL,
-	PRIMARY KEY("track_id"),
-	FOREIGN KEY("track_id") REFERENCES "tracks"("TrackId")
+	"TrackId"	INTEGER NOT NULL,
+	"video_director"	TEXT NOT NULL,
+	PRIMARY KEY("TrackId"),
+	FOREIGN KEY("TrackId") REFERENCES "tracks"("TrackId")
 );
